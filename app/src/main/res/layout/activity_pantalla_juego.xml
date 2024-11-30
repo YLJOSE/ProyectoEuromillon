@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaJuego">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:orientation="horizontal"
+        app:rowCount="11">
+
+        <ImageView
+            android:id="@+id/num1"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero1"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num2"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero2"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num3"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero3"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num4"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero4"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num5"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero5"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero6"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num7"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero7"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num8"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero8"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num9"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero9"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num10"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero10"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num11"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero11"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num12"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero12"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num13"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero13"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num14"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero14"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num15"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero15"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num16"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero16"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num17"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero17"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num18"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero18"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num19"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero19"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num20"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero20"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num21"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero21"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num22"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero22"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num23"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero23"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num24"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero24"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num25"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero25"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num26"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero26"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num27"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero27"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num28"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero28"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num29"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero29"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num30"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero30"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num31"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero31"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num32"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero32"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num33"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero33"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num34"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero34"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num35"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero35"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num36"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero36"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num37"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero37"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num38"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero38"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num39"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero39"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num40"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero40"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num41"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero41"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num42"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero42"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num43"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero43"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num44"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero44"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num45"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero45"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num46"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero46"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num47"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero47"
+            app:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/num48"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero48"
+            app:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/num49"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/numero49"
+            app:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/num50"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="confirmarJugada"
+            android:src="@drawable/cincuenta"
+            app:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/buttonJugar"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="GUARDAR"
+            app:layout_columnSpan="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_gravity="center"
+            app:layout_row="10"
+            tools:ignore="HardcodedText" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
