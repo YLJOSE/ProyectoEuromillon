@@ -7,13 +7,166 @@
     android:layout_height="match_parent"
     tools:context=".JugadaEstrellas">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="253dp"
-        android:text="Button"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:orientation="horizontal"
+        app:rowCount="4">
+
+        <ImageView
+            android:id="@+id/estrella1"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_uno"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella2"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_dos"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella3"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_tres"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella4"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_cuatro"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella5"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_cinco"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_seis"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella7"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_siete"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella8"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_ocho"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella9"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_nueve"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella10"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_diez"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella11"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_once"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/estrella12"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick=""
+            android:src="@drawable/estrella_doce"
+            app:layout_gravity="center"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/buttonCompletarJugada"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="GUARDAR"
+            app:layout_columnSpan="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_gravity="center"
+            app:layout_row="3"
+            tools:ignore="HardcodedText" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

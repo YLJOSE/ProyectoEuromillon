@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoEuromillon"
         tools:targetApi="31">
         <activity
+            android:name=".MostrarResultado"
+            android:exported="false" />
+        <activity
             android:name=".JugadaEstrellas"
             android:exported="false" />
         <activity

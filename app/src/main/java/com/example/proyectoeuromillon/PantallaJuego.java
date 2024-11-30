@@ -9,10 +9,13 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 
 public class PantallaJuego extends AppCompatActivity {
     private Button button;
     private static int iterator=0;
+    public static ArrayList<String> numeros = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,7 @@ public class PantallaJuego extends AppCompatActivity {
         }
         int id = view.getId();
         String nameImage = getResources().getResourceEntryName(id);
-        System.out.println(nameImage);
+        numeros.add(nameImage);
         Toast.makeText(this, "Imagen clicada: " + nameImage, Toast.LENGTH_SHORT).show();
 
     }
