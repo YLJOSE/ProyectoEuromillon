@@ -538,7 +538,7 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="confirmarJugada"
-            android:src="@drawable/cincuenta"
+            android:src="@drawable/numero50"
             app:layout_gravity="center" />
 
         <Button
@@ -546,7 +546,8 @@
             android:layout_width="130dp"
             android:layout_height="70dp"
             android:text="GUARDAR"
-            app:layout_columnSpan="5"
+            app:layout_column="2"
+            app:layout_columnSpan="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.548"
             app:layout_constraintStart_toStartOf="parent"
@@ -554,6 +555,23 @@
             app:layout_gravity="center"
             app:layout_row="10"
             tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="RESET"
+            app:layout_columnSpan="2"
+            app:layout_column="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_gravity="center"
+            app:layout_row="10"
+            tools:ignore="HardcodedText" />
+
+
 
     </androidx.gridlayout.widget.GridLayout>
 

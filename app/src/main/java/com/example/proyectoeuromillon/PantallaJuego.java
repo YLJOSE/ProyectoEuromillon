@@ -1,7 +1,10 @@
 package com.example.proyectoeuromillon;
 
+import static java.lang.Thread.sleep;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -13,8 +16,8 @@ import java.util.ArrayList;
 
 
 public class PantallaJuego extends AppCompatActivity {
-    private Button button;
-    private static int iterator=0;
+    private Button button, buttonReset;
+    private static int iterator = 0;
     public static ArrayList<String> numeros = new ArrayList<>();
 
     @Override
@@ -23,6 +26,9 @@ public class PantallaJuego extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pantalla_juego);
 
+        Toast toast = Toast.makeText(this, "Si repetiste números, presiona RESET y vuelve a ingresar!!!", Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.TOP, 0, 100);
+        toast.show();
 
         button = findViewById(R.id.buttonJugar);
         button.setOnClickListener(new View.OnClickListener() {
@@ -32,17 +38,47 @@ public class PantallaJuego extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-     }
+
+        buttonReset = findViewById(R.id.buttonReset);
+
+        buttonReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                numeros.clear();
+                iterator = 0;
+                Toast.makeText(PantallaJuego.this, "Vuelve a ingresar tu jugada", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
     public void confirmarJugada(View view) {
         iterator++;
-        if(iterator==5){
-            Toast.makeText(this,"Ya no puedes seleccionar más",Toast.LENGTH_SHORT).show();
+        if (iterator <= 5) {
+            int id = view.getId();
+            String nameImage = getResources().getResourceEntryName(id);
+            // uso de expresiones regulares
+            String strRegex = "\\d+$";
+            java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(strRegex);
+            // encontrar la coincidencia
+            java.util.regex.Matcher matcher = pattern.matcher(nameImage);
+            if (matcher.find()) {
+                String mg = matcher.group();
+                Toast.makeText(this, "Tu número es: " + matcher.group(), Toast.LENGTH_SHORT).show();
+                numeros.add(mg);
+            }
+            if (iterator == 5) {
+                String d = "";
+                for (int i = 0; i < numeros.size(); i++) {
+                    d += numeros.get(i) + " ";
+                }
+                Toast.makeText(this, "Tu jugada es: " + d, Toast.LENGTH_LONG).show();
+            }
+
+        } else {
+
+            Toast.makeText(this, "Ya no puedes seleccionar más", Toast.LENGTH_LONG).show();
+
         }
-        int id = view.getId();
-        String nameImage = getResources().getResourceEntryName(id);
-        numeros.add(nameImage);
-        Toast.makeText(this, "Imagen clicada: " + nameImage, Toast.LENGTH_SHORT).show();
 
     }
 }
