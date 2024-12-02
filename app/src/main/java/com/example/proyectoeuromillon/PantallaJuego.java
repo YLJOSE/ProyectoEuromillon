@@ -1,7 +1,5 @@
 package com.example.proyectoeuromillon;
 
-import static java.lang.Thread.sleep;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;

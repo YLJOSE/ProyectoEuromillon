@@ -12,6 +12,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     private Button button;
 
@@ -26,14 +29,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
         button = findViewById(R.id.buttonJugar);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent intent = new Intent(MainActivity.this, PantallaJuego.class);
-               startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, PantallaJuego.class);
+                startActivity(intent);
             }
         });
     }
