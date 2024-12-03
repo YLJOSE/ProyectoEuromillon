@@ -25,6 +25,10 @@ public class MostrarResultado extends AppCompatActivity {
     private TextView t2;
     private TextView t3;
     private TextView t4;
+    private TextView t5;
+    private TextView t6;
+    private TextView t7;
+    private TextView t8;
 
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
@@ -38,13 +42,23 @@ public class MostrarResultado extends AppCompatActivity {
             return insets;
         });
 
-        t1 = findViewById(R.id.textView);
-        t2 = findViewById(R.id.textView2);
-        t3 = findViewById(R.id.textView3);
-        t4 = findViewById(R.id.textView4);
+        t1 = findViewById(R.id.tvUno);
+        t2 = findViewById(R.id.tvDos);
+        t3 = findViewById(R.id.tvTres);
+        t4 = findViewById(R.id.tvCuatro);
+        t5 = findViewById(R.id.tvCinco);
+        t6 = findViewById(R.id.tvEstrella1);
+        t7 = findViewById(R.id.tvEstrella2);
+        t8 = findViewById(R.id.tvResultado);
 
-        t1.setText("Tu jugada es:\n " + numeros.get(0) + ", " + numeros.get(1) + ", " + numeros.get(2) + ", " + numeros.get(3) + ", " + numeros.get(4));
-        t2.setText("Tu jugada en estrellas es: \n" + numerosEstrellas.get(0) + ", " + numerosEstrellas.get(1));
+        t1.setText(numeros.get(0));
+        t2.setText(numeros.get(1));
+        t3.setText(numeros.get(2));
+        t4.setText(numeros.get(3));
+        t5.setText(numeros.get(4));
+        t6.setText(numerosEstrellas.get(0));
+        t7.setText(numerosEstrellas.get(1));
+
 
     }
 
@@ -67,8 +81,9 @@ public class MostrarResultado extends AppCompatActivity {
             Toast.makeText(this, "No ganaste bro!!!", Toast.LENGTH_SHORT).show();
         }
 
-        t4.setText("La jugada  ganadora es:\n " + numerosRandom.get(0) + ", " + numerosRandom.get(1) + ", " + numerosRandom.get(2) + ", " + numerosRandom.get(3) + ", " + numerosRandom.get(4));
-        t3.setText("La jugada ganadora en estrellas es:\n " + numerosRandomEstrellas.get(0) + ", " + numerosRandomEstrellas.get(1));
+        t8.setText(numerosRandom.get(0) + ", " + numerosRandom.get(1) + ", " + numerosRandom.get(2) + ", " + numerosRandom.get(3) + ", " + numerosRandom.get(4) + " y " + numerosRandomEstrellas.get(0) + ", " + numerosRandomEstrellas.get(1) + ", " );
+
+
     }
 
     public void inicializarJuagadaGanadora() {
