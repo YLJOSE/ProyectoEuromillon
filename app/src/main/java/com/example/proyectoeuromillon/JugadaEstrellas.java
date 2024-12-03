@@ -27,7 +27,7 @@ public class JugadaEstrellas extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_jugada_estrellas);
 
-        Toast toast = Toast.makeText(this, "Si repetiste números, presiona RESET y vuelve a ingresar!!!", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Si repetiste números, presiona RESET y vuelve a ingresar!!!", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, 100);
         toast.show();
 

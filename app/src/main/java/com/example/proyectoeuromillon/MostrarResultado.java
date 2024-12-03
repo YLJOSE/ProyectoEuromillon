@@ -78,7 +78,7 @@ public class MostrarResultado extends AppCompatActivity {
             d = "No ganaste!!";
         }
         if (a.equalsIgnoreCase("No ganaste!!") && d.equalsIgnoreCase("No ganaste!!")) {
-            Toast.makeText(this, "No ganaste bro!!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No ganaste bro!!!", Toast.LENGTH_LONG).show();
         }
 
         t8.setText(numerosRandom.get(0) + ", " + numerosRandom.get(1) + ", " + numerosRandom.get(2) + ", " + numerosRandom.get(3) + ", " + numerosRandom.get(4) + " y " + numerosRandomEstrellas.get(0) + ", " + numerosRandomEstrellas.get(1) + ", " );

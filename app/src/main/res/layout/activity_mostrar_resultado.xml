@@ -24,7 +24,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="104dp"
         android:onClick="ver"
         android:text="Ver Resultado"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,11 +36,11 @@
         android:id="@+id/tvResultado"
         android:layout_width="312dp"
         android:layout_height="37dp"
-        android:layout_marginTop="644dp"
+        android:layout_marginTop="656dp"
         android:text="El resultado es:.."
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintHorizontal_bias="0.599"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
