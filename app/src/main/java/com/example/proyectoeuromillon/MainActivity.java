@@ -3,6 +3,7 @@ package com.example.proyectoeuromillon;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,21 +39,23 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PantallaJuego.class);
-                startActivity(intent);
+                if (validation()) {
+                    Intent intent = new Intent(MainActivity.this, PantallaJuego.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
-        // Toast.makeText(this,"Error",Toast.LENGTH_SHORT);
+
     }
 
 
-    public boolean validation(View view) {
-
+    public boolean validation() {
         Usuarios[] usuarios = Usuarios.values();
-
         for (int i = 0; i < usuarios.length; i++) {
-            if (usuarios[i].getEmail().matches(email.toString()) && usuarios[i].getPsswrd().matches(psswrd.toString())) {
+            if (usuarios[i].getEmail().matches(email.getText().toString()) && usuarios[i].getPsswrd().matches(psswrd.getText().toString())) {
                 return true;
             }
         }
